@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
 
 
 @Injectable({
@@ -8,5 +9,5 @@ import { Injectable } from '@angular/core';
 
 export class DemoService {
 
-  constructor() { }
+  constructor(private http:HttpClient) { }
 }

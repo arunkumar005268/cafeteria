@@ -1,0 +1,53 @@
+.heading{
+    margin-top: 9%;
+}
+body{
+    background-color: #c5b047;
+   
+}
+.boxs{
+    width: 100%;
+    height:550px;
+}
+
+.ic1{
+   margin-left: 15px;
+   
+}
+
+    
+
+.ic2{
+   margin-left: 40%;
+}
+.ic3{
+margin-left:70%;
+}
+
+
+
+/* theft */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: rgb(202, 55, 55);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }

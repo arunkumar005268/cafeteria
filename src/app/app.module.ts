@@ -7,9 +7,6 @@ import { AppComponent } from './app.component';
 import { GenerateComponent } from './generate/generate.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SentotpComponent } from './sentotp/sentotp.component';
-
-
-
 import { OtpComponent } from './otp/otp.component';
 import { RouterModule } from '@angular/router';
 
@@ -20,15 +17,19 @@ import { RouterModule } from '@angular/router';
     GenerateComponent,
     DashboardComponent,
     SentotpComponent,
-    OtpComponent
+    OtpComponent,
+    GenerateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-
-    
-  ],
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path:'',redirectTo:'sentotp',pathMatch:'full'},
+      {path:'generate', component:GenerateComponent},
+      {path:'sentotp', component:SentotpComponent},
+  {path:'otp',component:OtpComponent}
+   ]), ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,50 @@
+.new{
+    font-family:primary-font-family;
+    font-size:20px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:red;
+  }
+  .container{
+  max-width: 450px;
+  text-align:center;
+  }
+  .wrapper input{
+    background-color:bisque;
+    border-color:white;
+    color:black;
+  }
+  .wrapper input:focus{
+  box-shadow: inset 6px 4px;
+  }
+  .register_btn{
+  color: azure;
+  background:transparent;
+  border:3px solid  azure;
+  border-radius:10px;
+  margin-top: 10px;
+    padding: 10px;
+    font-weight: 700;
+  }
+  .img{
+    width: 40px;
+  margin-bottom: 15px;
+  }
+  
+  .fw-normal{
+  color:blue;
+  padding-top: 30px;
+  font-size: 19PX;
+  }
+  .login{
+  font-size :25px;
+  margin-left:-10px;
+  color:white;
+  margin-left: 10px;
+  text-decoration:none;
+  }
+  .fw-bolder {
+  color:whitesmoke;
+  }

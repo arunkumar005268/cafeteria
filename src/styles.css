@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.new{
+
+
+    background-image:url("assets/new.png");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SentotpComponent } from './sentotp/sentotp.component';
 import { OtpComponent } from './otp/otp.component';
 import { RouterModule } from '@angular/router';
+import { SignupComponent } from './signup/signup.component';
 
 
 @NgModule({
@@ -18,15 +19,17 @@ import { RouterModule } from '@angular/router';
     DashboardComponent,
     SentotpComponent,
     OtpComponent,
-    GenerateComponent
+    GenerateComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot([
-      {path:'',redirectTo:'sentotp',pathMatch:'full'},
+      {path:'',redirectTo:'signup',pathMatch:'full'},
       {path:'generate', component:GenerateComponent},
+      {path:'signup', component:SignupComponent},
       {path:'sentotp', component:SentotpComponent},
   {path:'otp',component:OtpComponent}
    ]), ],
